@@ -17,22 +17,24 @@ The project focuses on two findings:
 ## DASHBOARD
 
 ### Review Topic Analysis
-[Page 4 image]
 
 This dashboard contains a slicer to sort by topic, 4 cards presenting larger data points about selected topic, the main line graph showing announcement markets in relation to reviews, and a table for a list of announcements related to the topic for more details.
 
-[Page 4 image tooltip]
+![Engagement vs. Satisfaction](docs/developer_response.png)
 
 The dashboard itself allows adjustment to the X-axis timeline, and presents details when hovering over a data point.
 
+![Engagement vs. Satisfaction](docs/developer_response_tooltip.png)
+
 ### Engagement vs. Satisfaction
-[Page 5 image]
 
 The four quadrant scatterplot starts by identifying announcements that can be filtered by type. It shows player interactions within a time period of the announcement either as a positive or negative for Player Engagement and Satisfaction.  Player's Engagement measures activity with the game, and player's Satisfaction uses player review metrics.
 
-[Page 5 image tooltip]
+![Engagement vs. Satisfaction](docs/engagement_versus_satisfaction.png)
 
 Examining a data point in detail shows a tooltip that highlights the values for Engagement/Satisfaction, while also expanding upon metrics 7 days before/after the specific announcement as a table.
+
+![Engagement vs. Satisfaction](docs/engagement_versus_satisfaction_tooltip.png)
 
 ## KEY FINDINGS
 
