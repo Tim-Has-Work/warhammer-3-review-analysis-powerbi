@@ -1,18 +1,31 @@
 # Total War: WARHAMMER III — Review Analysis with Power BI
 
-Analysis of Steam review sentiment, review topics, and player response
+Analysis of Steam review sentiment, review topics and player response
 to game updates using Python and Microsoft Power BI.
+
+- Steam API data collection
+- Review topic classification
+- Power Query data transformation
+- DAX measures for analytics and visuals
+- Pre/post-release analysis
+- Four-quadrant engagement/satisfaction analysis
 
 ![Engagement vs. Satisfaction](docs/engagement_versus_satisfaction.png)
 
 ## ANALYSIS
 
-This project examines Steam player reviews from 2024-2026. It compares player sentiment, and engagement around developer announcements for releases.
+This project examines Steam player reviews from 2024-2026. It compares player sentiment and engagement around developer announcements for releases.
 
 The project focuses on two findings:
 
-- Review topic prevalence, and recommendation rates
+- Review topic prevalence and recommendation rates
 - Engagement vs. satisfaction before and after game updates
+
+Steam provided public data accessible through an API used by steam_review_api.py, for historical data of the 2024-2026 daily activity was provided from games-popularity.com with player_count_api.py and steamdb.com provided developer announcement information.
+
+For Topic Classification, ChatGPT Plus ingested a CSV file containing 50k+ text reviews and Developer Announcements. The topic "Other" was not included in Power BI Visualizations but does account for a part of percentage totals.
+
+Power BI powered Data Transforms, Modeling, Measures, and Visualization.
 
 ## DASHBOARD
 
@@ -41,41 +54,3 @@ Examining a data point in detail shows a tooltip that highlights the values for 
 - A strong correlation of announcements with free + paid content, and increased player negative reviews, while also accounting for higher player activity
 - Announcements for Patches moved the least amount of Engagement, while only marginally affecting player's review recommendation
 - Some developer releases, such as those involving Balance, closely follows player negativity either as a peak (likely resolving negativity), or a valley (likely a causal factor to negativity)
-- Major content related releases often are followed by 2-3 Hotfixes within a 30 day period
-
-## METHODOLOGY
-
-Steam provided public data accessible through an API used by steam_review_api.py, for historical data of the 2024-2026 daily activity was provided from games-popularity.com with player_count_api.py, and steamdb.com provided developer announcement information as a download, and/or from public tables.
-
-For Topic Classification, ChatGPT Plus ingested a CSV file containing 50k+ text reviews, and Developer Announcements. The topic "Other" was not included in Power BI Visualizations, but does account for a part of percentage totals.
-
-Power BI powered Data Transforms, Modeling, Measures, and Visualization.
-
-```mermaid
-graph LR;
-    A[Steam Reviews] --> B[Python Data Collection];
-    B --> C[Topic Classification];
-    C --> D[Power Query Data Transformation];
-    D --> E[Data Modeling];
-    E --> F[DAX for Measures];
-    F --> G[Power BI Visualization];
-```
-## CORE FEATURES
-
-- Steam Review API data collection
-- Review topic classification
-- Power Query data transformation
-- DAX measures for both analytics, and visuals
-- Pre/post-release analysis
-- Four-quadrant engagement/satisfaction analysis
-
-## PROJECT FILES
-
-- Power BI report (`.pbix`)
-- Processed review dataset
-- Python API fetchers
-- Dashboard images
-
-## TOOLS
-
-Python · Power BI · Power Query · DAX · CSV/JSON · ChatGPT
