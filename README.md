@@ -47,7 +47,7 @@ Examining a data point in detail shows a tooltip that highlights the values for 
 
 Steam provided public data accessible through an API used by steam_review_api.py, for historical data of the 2024-2026 daily activity was provided from games-popularity.com with player_count_api.py, and steamdb.com provided developer announcement information as a download, and/or from public tables.
 
-For Topic Classification, ChatGPT Pro ingested a CSV file containing 50k+ text reviews, and Developer Announcements. The topic "Other" was not included in Power BI Visualizations, but does account for a part of percentage totals.
+For Topic Classification, ChatGPT Plus ingested a CSV file containing 50k+ text reviews, and Developer Announcements. The topic "Other" was not included in Power BI Visualizations, but does account for a part of percentage totals.
 
 Power BI powered Data Transforms, Modeling, Measures, and Visualization.
 
