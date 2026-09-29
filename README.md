@@ -3,7 +3,7 @@
 Analysis of Steam review sentiment, review topics, and player response
 to game updates using Python and Microsoft Power BI.
 
-[Dashboard / Page 5 hero image]
+![Engagement vs. Satisfaction](docs/engaement_versus_satisfaction.png)
 
 ## ANALYSIS
 
