@@ -44,6 +44,12 @@ Examining a data point in detail shows a tooltip that highlights the values for 
 
 ## METHODOLOGY
 
+Steam provides public data through an API, for historical data of the 2024-2026 daily activity was provided through an API from games-popularity.com, and steamdb.com provided developer announcement information.
+
+For Topic Classification, ChatGPT Pro ingested a CSV file containing 50k+ text reviews, and Developer Announcements. The topic "Other" was not included in Power BI Visualizations, but does account for a part of percentage totals.
+
+Power BI powered Data Transforms, Modeling, Measures, and Visualization.
+
 ```mermaid
 graph LR;
     A[Steam Reviews] --> B[Python Data Collection];
@@ -53,8 +59,6 @@ graph LR;
     E --> F[DAX for Measures];
     F --> G[Power BI Visualization];
 ```
-For Topic Classification, ChatGPT Pro ingested a CSV file containing 50k+ text reviews, and Developer Announcements for the same topics noting their appearances. The topic "Other" was not included in Power BI Visualizations, but does account for a part of percentage totals. 
-
 ## CORE FEATURES
 
 - Steam Review API data collection
