@@ -7,12 +7,11 @@ to game updates using Python and Microsoft Power BI.
 
 ## ANALYSIS
 
-This project examines Steam player reviews from 2024-2026, and
-compares player sentiment and engagement around developer announcements for releases.
+This project examines Steam player reviews from 2024-2026. It compares player sentiment, and engagement around developer announcements for releases.
 
 The project focuses on two findings:
 
-- Review topic prevalence and recommendation rates
+- Review topic prevalence, and recommendation rates
 - Engagement vs. satisfaction before and after game updates
 
 ## DASHBOARD
@@ -29,7 +28,7 @@ The dashboard itself allows adjustment to the X-axis timeline, and presents deta
 ### Engagement vs. Satisfaction
 [Page 5 image]
 
-The four quadrant scatterplot starts by identifying announcements that can be filtered by type. It shows player interactions within a time period of the announcement either as a positive or negative for Player Engagement and Satisfaction.  Player's Engagement is measures activity with the game, and player's Satisfaction uses player review metrics.
+The four quadrant scatterplot starts by identifying announcements that can be filtered by type. It shows player interactions within a time period of the announcement either as a positive or negative for Player Engagement and Satisfaction.  Player's Engagement measures activity with the game, and player's Satisfaction uses player review metrics.
 
 [Page 5 image tooltip]
 
@@ -52,13 +51,14 @@ graph LR;
     E --> F[DAX for Measures];
     F --> G[Power BI Visualization];
 ```
+For Topic Classification, ChatGPT Pro ingested a CSV file containing 50k+ text reviews, and Developer Announcements for the same topics noting their appearances. The topic "Other" was not included in Power BI Visualizations, but does account for a part of percentage totals. 
 
 ## CORE FEATURES
 
 - Steam Review API data collection
 - Review topic classification
 - Power Query data transformation
-- DAX measures for both analytics and visuals
+- DAX measures for both analytics, and visuals
 - Pre/post-release analysis
 - Four-quadrant engagement/satisfaction analysis
 
@@ -71,4 +71,4 @@ graph LR;
 
 ## TOOLS
 
-Python · Power BI · Power Query · DAX · CSV/JSON
+Python · Power BI · Power Query · DAX · CSV/JSON · ChatGPT
