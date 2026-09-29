@@ -1,0 +1,28 @@
+player_counts
+SOURCE: https://games-popularity.com (python used with api)
+DATE: 2026/9/23 (YYYY/MM/DD)
+Timestamp assumes 00:00:00 for time if data only had data and no time.
+Missing Dates:
+2024-01-22
+2024-02-23
+2024-02-27
+2024-02-28
+2024-03-05
+2024-03-06
+2024-03-07
+2024-03-08
+2024-03-09
+2024-03-10
+2024-03-12
+2024-03-13
+2024-12-28
+2024-12-29
+2026-09-17
+
+patches_
+SOURCE: https://steamdb.info/app/1142710/dlc/
+DATE: 2026/9/23 (YYYY/MM/DD)
+
+reviews_
+SOURCE: https://store.steampowered.com/appreviews/1142710 (python used with api)
+DATE: 2026/9/23 (YYYY/MM/DD)
