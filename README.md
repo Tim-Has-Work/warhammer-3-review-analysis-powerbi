@@ -40,7 +40,8 @@ Examining a data point in detail shows a tooltip that highlights the values for 
 
 - A strong correlation of announcements with free + paid content, and increased player negative reviews, while also accounting for higher player activity
 - Announcements for Patches moved the least amount of Engagement, while only marginally affecting player's review recommendation
-- Developer releases involving Balance closely follows player negativity either as a peak (likely resolving negativity), or a valley (likely a causal factor to negativity).
+- Some developer releases, such as those involving Balance, closely follows player negativity either as a peak (likely resolving negativity), or a valley (likely a causal factor to negativity)
+- Major content related releases often are followed by 2-3 Hotfixes within a 30 day period
 
 ## METHODOLOGY
 
