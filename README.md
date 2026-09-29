@@ -43,19 +43,15 @@ Examining a data point in detail shows a tooltip that highlights the values for 
 
 ## METHODOLOGY
 
-Steam Reviews
-      ↓
-Python collection
-      ↓
-Topic classification of 50k+ reviews
-      ↓
-Power Query transformation and data cleanup
-      ↓
-Data Modeling
-      ↓
-DAX primarily for Measures
-      ↓
-Power BI visualization
+```mermaid
+graph LR;
+    A[Steam Reviews] --> B[Python Data Collection];
+    B --> C[Topic Classification];
+    C --> D[Power Query Data Transformation];
+    D --> E[Data Modeling];
+    E --> F[DAX for Measures];
+    F --> G[Power BI Visualization];
+```
 
 ## CORE FEATURES
 
@@ -70,8 +66,7 @@ Power BI visualization
 
 - Power BI report (`.pbix`)
 - Processed review dataset
-- Python scraper
-- Topic-classification script
+- Python API fetchers
 - Dashboard images
 
 ## TOOLS
