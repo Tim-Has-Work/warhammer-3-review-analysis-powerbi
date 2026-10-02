@@ -3,50 +3,48 @@
 Analysis of Steam review sentiment, review topics and player response
 to game updates using Python and Microsoft Power BI.
 
-- Steam API data collection
+- API data collection
 - Review topic classification
 - Power Query data transformation
 - DAX measures for analytics and visuals
-- Release analysis for player Sentiment and Engagement
+- Release analysis of player Sentiment and Engagement
 
 ![Player Activity with Releases](docs/player_activity_overview.png)
 
 ## ANALYSIS
 
-This project examines Steam player reviews from 2024-2026. It compares player sentiment and engagement around developer announcements for releases.
+This project examines Steam player reviews from 2024-2026, historical data from games-popularity.com, and steamdb for developer announcement information. ChatGPT Plus then ingests CSV files containing 50k+ text to organize common topics for further comparison. 
 
-The project focuses on two findings:
+After data collection the project then focuses on two findings:
 
-- Reviews with topic prevalence and player positive recommendation
-- Player activity before and after game updates by type
-
-Steam provided public data accessible through an API used by steam_review_api.py, for historical data of the 2024-2026 daily activity was provided from games-popularity.com with player_count_api.py and steamdb.com provided developer announcement information.
-
-For Topic Classification, ChatGPT Plus ingested a CSV file containing 50k+ text reviews and Developer Announcements to organize into common topics.
-
-Power BI powered Data Transforms, Modeling, Measures, and Visualization.
+- Reviews and Announcements by topic including player positive recommendations
+- Player activity before and after game releases by the type of an Announcement
 
 ## DASHBOARD
 
-### Review Topic Analysis
+### Player Review Analysis
 
-This dashboard contains a slicer to sort by topic, 4 cards presenting larger data points about selected topic, the main line graph showing announcement markets in relation to reviews, and a table for a list of announcements related to the topic for more details.
+The report cross analyzes the topics in player reviews, and similar topics in announcements. It then shows how the announcements affect on player sentiment by giving a positive recommendation as a line that relates to the review count shown by columns. 
 
-![Engagement vs. Satisfaction](docs/player_reviews_overview.png)
+This dashboard contains a date range for the graph, a dropdown menu to sort by topics, another dropdown for line graph visibility toggle, 3 cards presenting larger data points about selected topic within the range, the main graph showing player review counts + recommendation percentage, and a table for a list of announcements for more details.
 
-The dashboard itself allows adjustment to the X-axis timeline, and presents details when hovering over a data point.
+![Player Sentiment](docs/player_reviews_overview.png)
 
-![Engagement vs. Satisfaction](docs/player_reviews_tooltip.png)
+The graph itself allows adjustment to the Y-axis, and presents details when hovering over a column.
 
-### Engagement vs. Satisfaction
+![Player Sentiment](docs/player_reviews_tooltip.png)
 
-The four quadrant scatterplot starts by identifying announcements that can be filtered by type. It shows player interactions within a time period of the announcement either as a positive or negative for Player Engagement and Satisfaction.  Player's Engagement measures activity with the game, and player's Satisfaction uses player review metrics.
+### Player Activity
 
-![Engagement vs. Satisfaction](docs/player_activity_overview.png)
+On this page it analyzes the direct engagement of players in relation to announcements. The measurement of player activity helps to show which types of announcements influence engagement by presenting daily highs, lows, 7 Day Averages, and 30 Day Averages.
 
-Examining a data point in detail shows a tooltip that highlights the values for Engagement/Satisfaction, while also expanding upon metrics 7 days before/after the specific announcement as a table.
+The dashboard allows filtering by date range, announcement types from a dropdown, a graph visibility toggle, 3 cards based on the date range to show daily average players + daily player STD + Intraday player STD, and the line graph displaying player activity across time.
 
-![Engagement vs. Satisfaction](docs/player_activity_tooltips.png)
+![Player Engagement](docs/player_activity_overview.png)
+
+Examining a data point expands to show specifics for that day.
+
+![Player Engagement](docs/player_activity_tooltips.png)
 
 ## KEY FINDINGS
 
