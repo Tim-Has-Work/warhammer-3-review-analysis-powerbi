@@ -1,8 +1,8 @@
 # Player Review and Activity Analysis for Total Warhammer 3 
 
-Total Warhammer 3 recently had a major update. I was interested in exploring player sentiment and engagement to see how they're influenced by the developer's releases.
+I built this project to analyze player sentiment and activity in Total Warhammer 3, which just had its biggest release update. I wanted to focus on how reviews and player counts changed around developer releases.
 
-This project uses Steam reviews, historical player activity and developer release data to explore those patterns with Python and Power BI.
+Using Power BI, I combined Steam reviews, historical player counts and developer release data. This made it possible to compare trends in player feedback and engagement over time.
 
 ![Player Activity with Releases](docs/player_activity_overview.png)
 
