@@ -1,6 +1,6 @@
-# Total War Warhammer 3 Player Review and Activity Analysis
+# Player Review and Activity Analysis for Total Warhammer 3 
 
-I became intrigued by Total War WARHAMMER 3 after a major update was mentioned by some of my friends. While I did not play the specific game, however I was familiar with the genre. I wanted to explore the discussions and feedback of players including their own activity. This lead me to discover what is a part of player sentiment beyond a Steam Review score and how players might be affected by game releases.
+I became intrigued by Total Warhammer 3 after a major update was mentioned by some of my friends. While I did not play the specific game, however I was familiar with the genre. I wanted to explore the discussions and feedback of players including their own activity. This lead me to discover what is a part of player sentiment beyond a Steam Review score and how players might be affected by game releases.
 
 This project uses Steam reviews, historical player activity, and developer release data to explore those patterns with Python and Power BI.
 
