@@ -22,7 +22,7 @@ After data collection the project then focuses on two findings:
 
 ## DASHBOARD
 
-### Player Review Analysis
+### Player Review
 
 The report cross analyzes the topics in player reviews, and similar topics in announcements. It then shows how the announcements affect on player sentiment by giving a positive recommendation as a line that relates to the review count shown by columns. 
 
@@ -48,6 +48,5 @@ Examining a data point expands to show specifics for that day.
 
 ## KEY FINDINGS
 
-- A strong correlation of announcements with free + paid content, and increased player negative reviews, while also accounting for higher player activity
-- Announcements for Patches moved the least amount of Engagement, while only marginally affecting player's review recommendation
-- Some developer releases, such as those involving Balance, closely follows player negativity either as a peak (likely resolving negativity), or a valley (likely a causal factor to negativity)
+- Promotional events can lead to a higher volume of reviews that can be negative, so interpreting review sentiment to identify topics is crucial. This can be used to assist in targeting high-impact releases to recover sentiment over time.
+- Player activity follows a weekly periodic pattern revolving around increased play on weekends, and content related announcements sometimes disrupt the dip in that periodic activity. There may be an opportunity to provide shorter form content suitable for weekday play in order to raise the valley of the periodic.
