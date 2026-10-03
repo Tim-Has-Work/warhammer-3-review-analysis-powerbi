@@ -17,9 +17,9 @@ I focused the analysis around a few questions:
 
 ## Data
 
-- Steam player reviews from 2024 through 2026
-- Historical player activity data from games-popularity.com
-- Developer announcements and release information from SteamDB
+- Steam player reviews from 2024 through 2026: https://store.steampowered.com/appreviews/1142710
+- Historical player activity data from games-popularity.com: https://games-popularity.com
+- Developer announcements and release information from SteamDB: https://steamdb.info/app/1142710/dlc/
 - Review topics created from recurring themes in player feedback
 
 ## Workflow
