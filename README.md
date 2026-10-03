@@ -1,43 +1,42 @@
 # Player Review and Activity Analysis for Total Warhammer 3 
 
-I became intrigued by Total Warhammer 3 after a major update was mentioned by some of my friends. While I did not play the specific game, however I was familiar with the genre. I wanted to explore the discussions and feedback of players including their own activity. This lead me to discover what is a part of player sentiment beyond a Steam Review score and how players might be affected by game releases.
+I became intrigued by Total Warhammer 3 after was mentioned by some of my friends. I wanted to explore player sentiment and engagement to see how they're influenced by the developer releases.
 
-This project uses Steam reviews, historical player activity, and developer release data to explore those patterns with Python and Power BI.
+This project uses Steam reviews, historical player activity and developer release data to explore those patterns with Python and Power BI.
 
 ![Player Activity with Releases](docs/player_activity_overview.png)
 
 ## Project Questions
-
-I focused the analysis around a few questions:
 
 - What patterns appear in player activity and reviews over time?
 - How does player sentiment and engagement change around developer releases?
 - How does player sentiment differ across common review topics?
 - How much is player engagement affected by different types of announcements?
 
+## TOOLS
+- Power BI
+- DAX
+- Python
+
 ## Data
 
-- Steam player reviews from 2024 through 2026: https://store.steampowered.com/appreviews/1142710
-- Historical player activity data from games-popularity.com: https://games-popularity.com
-- Developer announcements and release information from SteamDB: https://steamdb.info/app/1142710/dlc/
-- Review topics created from recurring themes in player feedback
+- Steam player reviews from 2024 through 2026: (https://store.steampowered.com/appreviews/1142710)
+- Historical player activity data from games-popularity: (https://games-popularity.com)
+- Developer announcements and release information from SteamDB: (https://steamdb.info/app/1142710/patchnotes/)
+- LLM assisted topic filtering for player reviews
 
 ## Workflow
 
 - Collected Steam review and player activity data through api with a Python script
 - Cleaned and transformed the datasets within Power BI
-- Used an LLM-assisted process to identify common topics across more than 50,000 review texts
+- Used an LLM assisted process to identify common topics across +50,000 review texts
 - Kept and organized recurring topics into their own columns
-- Connected review topics with relevant developer announcements
-- Built measures for sentiment, review volume, and player activity
+- Created DAX measures to compare review sentiment and player engagement
 - Created an interactive Power BI report
-- Compared review sentiment and player activity around selected releases
 
 ### Player Review
 
-I built the Player Review dashboard to look beyond the overall Steam rating and examine what players were actually discussing.
-
-The dashboard allows me to:
+I built the Player Review dashboard to look beyond the overall Steam rating and examine what players were actually discussing that included the following:
 
 - Filter reviews by topic and date
 - Compare review volume with positive recommendation percentage
@@ -46,50 +45,48 @@ The dashboard allows me to:
 
 ![Player Sentiment](docs/player_reviews_overview.png)
 
-One example is Hotfix 6.3.2 when filtering for Campaign and AI related reviews.
+One example "Hotfix 6.3.2" when filtering for Campaign and AI topics has the following:
 
 - Positive recommendations in the previous 7 days: 5.37%
 - Positive recommendations in the following 7 days: 52.97%
+
+This implies the hotfix that addressed the player's feedback, and that it was received very positively over following the week.
 
 ![Player Sentiment](docs/player_reviews_campaign_ai.png)
 
 ### Player Activity
 
-I also wanted to understand whether major updates and announcements were associated with changes in player engagement.
-
-The dashboard includes:
+I also wanted to understand whether major updates and announcements were associated with changes in player engagement, so this dashboard includes the following:
 
 - Daily player activity
 - Daily highs and lows
-- 7-day averages
-- 30-day averages
+- 7 day averages
+- 30 day averages
 - Announcement and release filters
 - Comparisons between release dates and surrounding activity
 
 ![Player Engagement](docs/player_activity_overview.png)
 
-An example focusing on a tighter time span showing a periodic cycle for the week.
-
 ![Player Engagement](docs/player_activity_periodic_content.png)
 
 ## Key Findings
 
-A few patterns stood out during the analysis:
-
-- Player activity follows a clear weekly cycle, with stronger activity around weekends
-- Some content releases coincide with short-term changes from the normal weekly activity pattern
+- Player activity follows a clear weekly cycle with stronger activity around weekends
+  - Is there an opportunity here to improve engagement for the weekdays?
 - Higher review volume does not always correspond with more positive sentiment
-- Promotional periods can increase the number of reviews while sentiment remains mixed
+  - Does this reveal an issue in the QA process that results in negative player feedback?
+  - How much does negative player feedback affect sales?
 - Breaking reviews into specific topics provides more useful context than looking only at the overall review score
-
-The project reinforced something I find important in data analysis: a single metric rarely tells the full story. Review volume, sentiment, player activity, and release timing all provide different pieces of the same picture.
+  - Are there any other topics or annoucements we can breakdown for analytics?
+- Player Activity spiked around major discount events and major content releases
+  - Is there way to strategically align your discounts to grow the player base?
+   Will that player base purchase subsequent content?
 
 ## Limitations
 
-There are several limitations I would consider when interpreting the results:
-
+- Limited time span of data between 2024 to 2026
 - The analysis is observational and does not prove that releases caused changes in sentiment or player activity
 - Promotions, seasonal effects, weekends, and unrelated events may also influence the results
-- LLM-assisted topic classification can introduce inconsistent or ambiguous labels
+- LLM assisted topic classification can introduce inconsistent or ambiguous labels
 - Steam reviewers may not represent the full player population
 - Short analysis windows can overlap with other announcements or releases
