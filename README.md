@@ -1,4 +1,4 @@
-# Total War: WARHAMMER III — Review Analysis with Power BI
+# Total War: WARHAMMER III Review Analysis with Power BI
 
 Analysis of Steam review sentiment, review topics and player response
 to game updates.
