@@ -30,9 +30,9 @@ This dashboard contains a date range for the graph, a dropdown menu to sort by t
 
 ![Player Sentiment](docs/player_reviews_overview.png)
 
-The graph itself allows adjustment to the Y-axis, and presents details when hovering over a column.
+Example of the graph filtering to a date range, and for the topics "campaign" and "ai." The table below exposes details that Hotfix 6.3.2 experienced an increase in positive reviews over the next 7 days after a significant drop 7 days prior to the hotfix: 5.37% -> 52.97%
 
-![Player Sentiment](docs/player_reviews_tooltip.png)
+![Player Sentiment](docs/player_reviews_campaign_ai.png)
 
 ### Player Activity
 
@@ -42,9 +42,9 @@ The dashboard allows filtering by date range, announcement types from a dropdown
 
 ![Player Engagement](docs/player_activity_overview.png)
 
-Examining a data point expands to show specifics for that day.
+With a narrow date range the weekly periodic activity can be observed, and this graph filters free + paid content that also shows the tooltips for one patch with free content with a spike of activity in the dip of the week.
 
-![Player Engagement](docs/player_activity_tooltips.png)
+![Player Engagement](docs/player_activity_periodic_content.png)
 
 ## KEY FINDINGS
 
