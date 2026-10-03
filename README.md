@@ -1,8 +1,6 @@
-# Total War: WARHAMMER III Player Review and Activity Analysis
+# Total War Warhammer 3 Player Review and Activity Analysis
 
-I became interested in Total War: WARHAMMER III after a major update brought the game back into conversation among several of my friends. I had not played much of the game myself, but I was curious about the amount of player activity, discussion, and feedback surrounding its updates.
-
-That made it an interesting dataset to explore. I wanted to see how player sentiment and activity changed around patches, content releases, and developer announcements, and whether those changes could be measured beyond the overall Steam review score.
+I became intrigued by Total War WARHAMMER 3 after a major update was mentioned by some of my friends. While I did not play the specific game, however I was familiar with the genre. I wanted to explore the discussions and feedback of players including their own activity. This lead me to discover what is a part of player sentiment beyond a Steam Review score and how players might be affected by game releases.
 
 This project uses Steam reviews, historical player activity, and developer release data to explore those patterns with Python and Power BI.
 
@@ -12,16 +10,10 @@ This project uses Steam reviews, historical player activity, and developer relea
 
 I focused the analysis around a few questions:
 
+- What patterns appear in player activity and reviews over time?
+- How does player sentiment and engagement change around developer releases?
 - How does player sentiment differ across common review topics?
-- How does sentiment change around developer announcements and updates?
-- How does player activity change around patches and content releases?
-- What recurring patterns appear in player activity over time?
-
-## Tools
-
-- Power BI
-- Python
-- DAX
+- How much is player engagement affected by different types of announcements?
 
 ## Data
 
@@ -32,9 +24,10 @@ I focused the analysis around a few questions:
 
 ## Workflow
 
-- Collected Steam review and player activity data
-- Cleaned and transformed the datasets
-- Used an LLM-assisted process to identify and organize recurring themes across more than 50,000 review texts
+- Collected Steam review and player activity data through api with a Python script
+- Cleaned and transformed the datasets within Power BI
+- Used an LLM-assisted process to identify common topics across more than 50,000 review texts
+- Kept and organized recurring topics into their own columns
 - Connected review topics with relevant developer announcements
 - Built measures for sentiment, review volume, and player activity
 - Created an interactive Power BI report
