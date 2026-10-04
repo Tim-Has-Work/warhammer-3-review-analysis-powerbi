@@ -65,7 +65,7 @@ I also wanted to understand whether major updates and announcements were associa
 - Announcement and release filters
 - Comparisons between release dates and surrounding activity
 
-![Player Engagement](docs/player_activity_overview.png)
+![Player Engagement](docs/player_activity_events.png)
 
 ![Player Engagement](docs/player_activity_periodic_content.png)
 
