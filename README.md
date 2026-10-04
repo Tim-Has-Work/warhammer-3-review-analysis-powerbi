@@ -22,7 +22,7 @@ Using Power BI, I combined Steam reviews, historical player counts and developer
 
 - Steam player reviews from 2024 through 2026: (https://store.steampowered.com/appreviews/1142710)
 - Historical player activity data from games-popularity: (https://games-popularity.com)
-- Developer announcements and release information from SteamDB: (https://steamdb.info/app/1142710/patchnotes/)
+- Developer announcements, discount events and release information from SteamDB: (https://steamdb.info/app/1142710/patchnotes/)
 - LLM assisted topic filtering for player reviews
 
 ## Workflow
@@ -80,13 +80,13 @@ I also wanted to understand whether major updates and announcements were associa
   - Are there any other topics or annoucements we can breakdown for analytics?
 - Player Activity spiked around major discount events and major content releases
   - Is there way to strategically align your discounts to grow the player base?
-   Will that player base purchase subsequent content?
+  - Will that player base purchase subsequent content?
 
 ## Limitations
 
 - Limited time span of data between 2024 to 2026
 - The analysis is observational and does not prove that releases caused changes in sentiment or player activity
-- Promotions, seasonal effects, weekends, and unrelated events may also influence the results
+- Promotional events, seasonal effects, weekends, and unrelated events also influence the results
 - LLM assisted topic classification can introduce inconsistent or ambiguous labels
 - Steam reviewers may not represent the full player population
-- Short analysis windows can overlap with other announcements or releases
+- Short analysis windows can overlap with other announcements or events
